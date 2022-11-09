@@ -7,11 +7,11 @@ h1{
 }
 
 .lightMode:hover{
-    background-color: coral;
+    background-color: lightblue;
 }
 
 .darkMode:hover{
-    background-color: coral;
+    background-color: lightblue;
 }
 
 .lightMode{
