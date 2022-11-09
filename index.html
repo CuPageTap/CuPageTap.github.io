@@ -10,9 +10,10 @@
         <!--Prerequisests for using Google Fonts API-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <!--Fetch Fonts from Google Fonts API-->
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <!--Connect global.css to the page-->
+        <link rel="stylesheet" href="index.css">
 
     </head>
 
@@ -22,11 +23,22 @@
         
 
         <div class="inputs">
-            <input type="button" style="background-color:white;color:black;width:150px;
-            height:40px;" value="Light Mode">
-            <input type="button" style="background-color:black;color:white;width:150px;
-            height:40px;" value="Dark Mode">
+
+
+            <div class="lightMode">
+                <input type="button"  style="background-color:white;color:black;width:150px;
+                height:40px;" value="Light Mode">
+            </div>
+
+
+            <div class="darkMode">
+                <input type="button" style="background-color:black;color:white;width:150px;
+                height:40px;" value="Dark Mode">
+            </div>
+
+
         </div>
+
 
         <div class="text"> <!--Does not currently work-->
             <p class="lightModeCounter">Light Mode: <var>0</var></p>

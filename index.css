@@ -2,6 +2,10 @@ p, h1{
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-.inputs:hover{
+.lightMode:hover{
+    background-color: coral;
+}
+
+.darkMode:hover{
     background-color: coral;
 }
