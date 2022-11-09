@@ -1,1 +1,7 @@
-div { background-color: #FF5733; }
+p, h1{
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+.inputs:hover{
+    background-color: coral;
+}
