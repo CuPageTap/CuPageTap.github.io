@@ -18,31 +18,36 @@
     </head>
 
     <body>
-
-        <h1 class="maintitle">Dark Mode or Light Mode?</h1>
         
+        <div class="main">
 
-        <div class="inputs">
+
+            <h1 class="maintitle">Dark Mode or Light Mode?</h1>
+            
+
+            <div class="inputs">
 
 
-            <div class="lightMode">
-                <input type="button"  style="background-color:white;color:black;width:150px;
-                height:40px;" value="Light Mode">
+                <div class="padding">
+                    <input type="button" value="Light Mode" class="lightMode">
+                </div>
+
+
+                <div class="padding">
+                    <input type="button" value="Dark Mode" class="darkMode">
+                </div>
+
+
             </div>
 
-
-            <div class="darkMode">
-                <input type="button" style="background-color:black;color:white;width:150px;
-                height:40px;" value="Dark Mode">
+            <div class="textPadding">
+                <div class="text"> <!--Does not currently work-->
+                    <p class="lightModeCounter">Light Mode: <var>0</var></p>
+                    <p class="darkModeCounter">Dark Mode: <var>0</var></p>
+                </div>
             </div>
-
 
         </div>
 
-
-        <div class="text"> <!--Does not currently work-->
-            <p class="lightModeCounter">Light Mode: <var>0</var></p>
-            <p class="darkModeCounter">Dark Mode: <var>0</var></p>
-        </div>
     </body>
 </html>

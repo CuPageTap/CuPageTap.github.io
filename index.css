@@ -2,10 +2,51 @@ p, h1{
     font-family: 'Josefin Sans', sans-serif; 
 }
 
+h1{
+    padding: 25px;
+}
+
 .lightMode:hover{
     background-color: coral;
 }
 
 .darkMode:hover{
     background-color: coral;
+}
+
+.lightMode{
+    background-color:white;
+    color:black;
+    width:150px;
+    height:40px;
+    margin: auto;
+}
+
+.darkMode{
+    background-color:black;
+    color:white;
+    width:150px;
+    height:40px;
+    margin: auto;
+}
+
+.main{
+    text-align: center;
+    padding: 10px;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.text{
+    padding: 5px;
+    border: 3px solid black;
+    width: 135px;
+    height: 200;
+    margin: auto;
+}
+
+.textPadding{
+    padding-top: 20px;
 }
