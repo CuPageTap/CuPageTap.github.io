@@ -7,7 +7,7 @@ h1{
 }
 
 .lightMode:hover{
-    background-color: lightblue;
+    background-color: LightGray;
 }
 
 .darkMode:hover{
