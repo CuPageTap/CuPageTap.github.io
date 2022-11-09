@@ -7,11 +7,11 @@ h1{
 }
 
 .lightMode:hover{
-    background-color: coral;
+    background-color: lightblue;
 }
 
 .darkMode:hover{
-    background-color: coral;
+    background-color: lightblue;
 }
 
 .lightMode{
@@ -25,7 +25,7 @@ h1{
 .darkMode{
     background-color:black;
     color:white;
-    width:150px;
+    width:150px:
     height:40px;
     margin: auto;
 }
