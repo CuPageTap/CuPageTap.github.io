@@ -29,12 +29,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" class="lightMode">
+                    <input type="button" value="Light Mode" class="lightMode" onclick="">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" class="darkMode">
+                    <input type="button" value="Dark Mode" class="darkMode" onclick="">
                 </div>
 
 
@@ -51,11 +51,15 @@
         
         <script>
             var lightmode = 0;
-            lightmode = lightmode + 1;
-            document.getElementById("lightmode").innerHTML = lightmode;
+            function addTodarkmode(amount) (
+                lightmode = lightmode + amount;
+                document.getElementById("lightmode").innerHTML = lightmode;
+            )
             var darkmode = 0;
-            darkmode = darkmode + 1;
-            document.getElementById("darkmode").innerHTML = darkmode;
+            function addTodarkmode(amount) (
+                darkmode = darkmode + amount;
+                document.getElementById("darkmode").innerHTML = darkmode;
+            )
         </script>
 
     </body>
