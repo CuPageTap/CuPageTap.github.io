@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
         <!--Connect global.css to the page-->
         <link rel="stylesheet" href="index.css">
+        <script src="main.js"></script>
 
     </head>
 
@@ -29,12 +30,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" class="lightMode" onclick="addTolightmode(1)">
+                    <input type="button" value="Light Mode" class="lightMode">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" class="darkMode" onclick="addTodarkmode(1)">
+                    <input type="button" value="Dark Mode" class="darkMode">
                 </div>
 
 
@@ -48,22 +49,5 @@
             </div>
 
         </div>
-        
-        <script>
-            var lightmode = 0;
-            addTodarkmode(10);
-            function addTodarkmode(amount) (
-                lightmode = lightmode + amount;
-                document.getElementById("lightmode").innerHTML = lightmode;
-            )
-            var darkmode = 0;
-           
-            function addTodarkmode(amount) (
-                darkmode = darkmode + amount;
-                document.getElementById("darkmode").innerHTML = darkmode;
-            )
-        </script>
-        <var>addTodarkmode</var>
-        <varaddTolightmode</var>
     </body>
 </html>
