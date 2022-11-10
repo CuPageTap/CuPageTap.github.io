@@ -4,7 +4,7 @@
     <head>
 
         <!--Title and Icon for the Tab-->
-        <title>Vote</title>
+        <title>Voting</title>
         <link rel="icon" href="https://raw.githubusercontent.com/CuPageTap/CuPageTap.github.io/main/Assets/iconv2.ico">
 
         <!--Prerequisests for using Google Fonts API-->
@@ -29,12 +29,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" class="lightMode">
+                    <input type="button" value="Light Mode" class="lightMode" onclick="addTolightmode(1)">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" class="darkMode">
+                    <input type="button" value="Dark Mode" class="darkMode" onclick="addTodarkmode(1)">
                 </div>
 
 
@@ -48,6 +48,22 @@
             </div>
 
         </div>
-
+        
+        <script>
+            var lightmode = 0;
+            addTodarkmode(10);
+            function addTodarkmode(amount) (
+                lightmode = lightmode + amount;
+                document.getElementById("lightmode").innerHTML = lightmode;
+            )
+            var darkmode = 0;
+           
+            function addTodarkmode(amount) (
+                darkmode = darkmode + amount;
+                document.getElementById("darkmode").innerHTML = darkmode;
+            )
+        </script>
+        <var>addTodarkmode</var>
+        <varaddTolightmode</var>
     </body>
 </html>
