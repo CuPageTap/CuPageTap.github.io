@@ -30,12 +30,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" class="lightMode">
+                    <input type="button" value="Light Mode" class="lightMode" onerror="myFunction()">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" class="darkMode">
+                    <input type="button" value="Dark Mode" class="darkMode" onerror="myFunction()">
                 </div>
 
 
@@ -48,6 +48,11 @@
                 </div>
             </div>
 
+            <script>
+            function myFunction() {
+                alert("error please reload.");
+            }
+            </script>
         </div>
     </body>
 </html>
