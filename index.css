@@ -47,6 +47,7 @@ h1{
     width: 135px;
     height: 200;
     margin: auto;
+    border-radius: 15px;
 }
 
 .textPadding{
