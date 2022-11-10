@@ -1,6 +1,6 @@
-var lightCounter;
+var lightCounter = 0;
 
-if(document.getElementById('lightMode').clicked == true) {
+function lightClick() {
     lightCounter +=1;
     document.getElementById("lCounter").innerHTML = lightCounter;
 };
