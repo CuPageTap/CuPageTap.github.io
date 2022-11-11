@@ -20,22 +20,13 @@
         <!--Javascript for LightMode Counter goes here-->
 
         <script>
-            var lightCounter = 0;
-            var darkCounter = 0;
-
-            let light = document.getElementById("lightMode");
-            let dark = document.getElementById("darkMode")
 
 
-            function lightClick() {
-                lightCounter +=1;
-                document.getElementById("lCounter").innerHTML = lightCounter;
-            };
-
-            function darkClick() {
-                darkCounter +=1;
-                document.getElementById("dCounter").innerHTML = darkCounter;
-            };
+            var clicks = 0;
+            function myFunction() {
+                clicks += 1;
+                document.getElementById("demo").innerHTML = clicks;
+            }
 
         </script>
 
@@ -55,12 +46,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" id="l1" class="lightMode" onerror="myFunction()" onclick="lightClick()">
+                    <input type="button" value="Light Mode" id="l1" class="lightMode"  onclick="myFunction">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" id="l2" class="darkMode" onerror="myFunction()">
+                    <input type="button" value="Dark Mode" id="l2" class="darkMode" >
                 </div>
 
 
@@ -68,21 +59,14 @@
 
             <div class="textPadding">
                 <div class="text"> <!--Does not currently work-->
-                    <p class="lightModeCounter">Light Mode:     <p class="lCounter">0</p>   </p>
+                    <p class="lightModeCounter">Light Mode:     <p class="demo">0</p>   </p>
                     <p class="darkModeCounter">Dark Mode:   <p class="dCounter">0</p> </p>
                 </div>
             </div>
 
             <script>
-            function myFunction() {
-                alert("error please reload.");
-            }
+
             </script>
-            <body>
-
-            <img src="https://raw.githubusercontent.com/CuPageTap/CuPageTap.github.io/main/Assets/weezer.jpg" alt="Weezer" width="1" height="1">
-
-            </body>
         </div>
     </body>
 </html>
