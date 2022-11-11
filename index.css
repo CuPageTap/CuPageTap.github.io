@@ -16,7 +16,7 @@ h1{
 
 .lightMode{
     background-color:white;
-    color:black;
+    color:gray;
     width:150px;
     height:40px;
     margin: auto;
@@ -24,7 +24,7 @@ h1{
 }
 
 .darkMode{
-    background-color:gray;
+    background-color:black;
     color:white;
     width:150px;
     height:40px;
