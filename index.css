@@ -21,6 +21,7 @@ h1{
     height:40px;
     margin: auto;
     border-radius: 15px;
+    transition-duration: 0.4s;
 }
 
 .darkMode{
@@ -30,6 +31,7 @@ h1{
     height:40px;
     margin: auto;
     border-radius: 15px;
+    transition-duration: 0.4s;
 }
 
 .main{
