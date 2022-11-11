@@ -16,6 +16,27 @@
         <link rel="stylesheet" href="index.css">
         <script src="main.js"></script>
 
+
+        <!--Javascript for LightMode Counter goes here-->
+
+        <script>
+            var lightCounter = 0;
+            var darkCounter = 0;
+
+            function lightClick() {
+                lightCounter +=1;
+                document.getElementById("lCounter").innerHTML = lightCounter;
+            };
+
+            function darkClick() {
+                darkCounter +=1;
+                document.getElementById("dCounter").innerHTML = darkCounter;
+            };
+            
+        </script>
+
+
+
     </head>
 
     <body>
