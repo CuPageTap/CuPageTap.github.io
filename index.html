@@ -23,6 +23,10 @@
             var lightCounter = 0;
             var darkCounter = 0;
 
+            let light = document.getElementById("lightMode");
+            let dark = document.getElementById("darkMode")
+
+
             function lightClick() {
                 lightCounter +=1;
                 document.getElementById("lCounter").innerHTML = lightCounter;
@@ -32,7 +36,7 @@
                 darkCounter +=1;
                 document.getElementById("dCounter").innerHTML = darkCounter;
             };
-            
+
         </script>
 
 
@@ -51,12 +55,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" class="lightMode" onerror="myFunction()" onclick="lightClick()">
+                    <input type="button" value="Light Mode" id="l1" class="lightMode" onerror="myFunction()" onclick="lightClick()">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" class="darkMode" onerror="myFunction()">
+                    <input type="button" value="Dark Mode" id="l2" class="darkMode" onerror="myFunction()">
                 </div>
 
 
