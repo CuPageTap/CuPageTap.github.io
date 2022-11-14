@@ -22,10 +22,16 @@
         <script>
 
 
-            var clicks = 0;
-            function myFunction() {
-                clicks += 1;
-                document.getElementById("demo").innerHTML = clicks;
+            var lightClicks = 0;
+            function lightModeCounter() {
+                lightClicks += 1;
+                document.getElementById("lightModeNumber").innerHTML = lightClicks;
+            }
+
+            var darkClicks = 0;
+            function darkModeCounter() {
+                darkClicks += 1;
+                document.getElementById("darkModeNumber").innerHTML = darkClicks;
             }
 
         </script>
@@ -46,12 +52,12 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" id="l1" class="lightMode"  onclick="myFunction()">
+                    <input type="button" value="Light Mode" id="l1" class="lightMode" onclick="lightModeCounter()">
                 </div>
 
 
                 <div class="padding">
-                    <input type="button" value="Dark Mode" id="l2" class="darkMode" >
+                    <input type="button" value="Dark Mode" id="l2" class="darkMode" onclick="darkModeCounter()" >
                 </div>
 
 
@@ -60,7 +66,7 @@
             <div class="textPadding">
                 <div class="text"> <!--Does not currently work-->
                     <p class="lightModeCounter">Light Mode:</p>
-                    <p class="demo">0</p>
+                    <p class="lightModeNumber">0</p>
                     <p class="darkModeCounter">Dark Mode:</p>
                 </div>
             </div>
