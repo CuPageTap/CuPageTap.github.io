@@ -52,7 +52,7 @@
 
 
                 <div class="padding">
-                    <input type="button" value="Light Mode" id="l1" class="lightMode" onclick="lightModeCounter()">
+                    <input type="button" value="Light Mode" id="l1" class="lightMode" onclick="myfunction()">
                 </div>
 
 
@@ -65,8 +65,9 @@
 
             <div class="textPadding">
                 <div class="text"> <!--Does not currently work-->
-                    <p class="lightModeCounter">Light Mode:</p>
-                    <p class="lightModeNumber">0</p>
+                    <p> Light Mode:</p>
+                    <p id="LightMode">0</p>
+                    <p> Dark Mode: </p>
                     <p id="DarkMode">0</p>
                 </div>
             </div>
@@ -79,6 +80,16 @@
 
             function myFunction(){
                  document.getElementById("DarkMode").innerHTML = add();
+               }
+            </script>
+            <script>
+            const add = (function () {
+                let counter = 0;
+                return function () {counter += 1; return counter;}
+            })();
+
+            function myFunction(){
+                 document.getElementById("LightMode").innerHTML = add();
                }
             </script>
         </div>
