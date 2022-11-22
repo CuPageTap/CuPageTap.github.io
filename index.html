@@ -67,12 +67,19 @@
                 <div class="text"> <!--Does not currently work-->
                     <p class="lightModeCounter">Light Mode:</p>
                     <p class="lightModeNumber">0</p>
-                    <p class="darkModeCounter">Dark Mode:</p>
+                    <p id="DarkMode">0</p>
                 </div>
             </div>
 
             <script>
+            const add = (function () {
+                let counter = 0;
+                return function () {counter += 1; return counter;}
+            })();
 
+            function myFunction(){
+                 document.getElementById("DarkMode").innerHTML = add();
+               }
             </script>
         </div>
     </body>
