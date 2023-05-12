@@ -3,74 +3,20 @@
 <head>
   <title>A Button Game</title>
   <link rel="icon" href="https://raw.githubusercontent.com/CuPageTap/CuPageTap.github.io/main/Assets/iconv2.ico">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  
   <style>
-    body {
-      font-family: 'Josefin Sans', sans-serif;
-      background-color: #f3f3f3;
-    }
-    
-    .main {
-      text-align: center;
-      margin-top: 100px;
-    }
-    
-    .maintitle {
-      color: #333;
-    }
-    
-    .inputs {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    
-    .padding {
-      margin: 0 10px;
-    }
-    
-    .lightMode, .darkMode {
-      padding: 10px 20px;
-      font-size: 18px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    
-    .textPadding {
-      margin-top: 50px;
-    }
-    
-    .text p {
-      margin: 10px 0;
-      font-weight: bold;
-      color: #333;
-    }
-    
-    .text #LightMode, .text #DarkMode {
-      font-size: 24px;
-    }
+    body {font-family: 'Josefin Sans', sans-serif; background-color: #f3f3f3;}
+    .main {text-align: center; margin-top: 100px;}
+    .maintitle {color: #333;}
+    .inputs {display: flex; justify-content: center; margin-top: 20px;}
+    .padding {margin: 0 10px;}
+    .lightMode, .darkMode {padding: 10px 20px; font-size: 18px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px;}
+    .textPadding {margin-top: 50px;}
+    .text p {margin: 10px 0; font-weight: bold; color: #333;}
+    .text #LightMode, .text #DarkMode {font-size: 24px;}
   </style>
-  
-  <script>
-    var darkClicks = 0;
-    function myFunction() {
-      darkClicks += 1;
-      document.getElementById("DarkMode").innerHTML = darkClicks;
-    }
-    
-    var lightClicks = 0;
-    function myFunctionwhite() {
-      lightClicks += 1;
-      document.getElementById("LightMode").innerHTML = lightClicks;
-    }
-  </script>
 </head>
 
 <body>
@@ -79,10 +25,10 @@
 
     <div class="inputs">
       <div class="padding">
-        <input type="button" value="Light Mode" id="l1" class="lightMode" onclick="myFunctionwhite()">
+        <input type="button" value="Light Mode" class="lightMode" onclick="updateCount('LightMode')">
       </div>
       <div class="padding">
-        <input type="button" value="Dark Mode" id="l2" class="darkMode" onclick="myFunction()">
+        <input type="button" value="Dark Mode" class="darkMode" onclick="updateCount('DarkMode')">
       </div>
     </div>
 
@@ -95,5 +41,14 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function updateCount(id) {
+      var element = document.getElementById(id);
+      var count = parseInt(element.innerHTML) || 0;
+      count += 1;
+      element.innerHTML = count;
+    }
+  </script>
 </body>
 </html>
