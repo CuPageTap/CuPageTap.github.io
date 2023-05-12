@@ -48,7 +48,21 @@
       var count = parseInt(element.innerHTML) || 0;
       count += 1;
       element.innerHTML = count;
+      localStorage.setItem(id, count);
     }
+
+    function loadCounts() {
+      var lightCount = localStorage.getItem('LightMode');
+      var darkCount = localStorage.getItem('DarkMode');
+      if (lightCount) {
+        document.getElementById('LightMode').innerHTML = lightCount;
+      }
+      if (darkCount) {
+        document.getElementById('DarkMode').innerHTML = darkCount;
+      }
+    }
+
+    loadCounts();
   </script>
 </body>
 </html>
