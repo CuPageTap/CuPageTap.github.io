@@ -43,26 +43,27 @@
   </div>
 
   <script>
+    // Establish a WebSocket connection
+    var socket = new WebSocket('ws://localhost:8080');
+
+    // Handle incoming messages
+    socket.onmessage = function(event) {
+      var data = JSON.parse(event.data);
+      document.getElementById('LightMode').innerHTML = data.lightCount;
+      document.getElementById('DarkMode').innerHTML = data.darkCount;
+    };
+
     function updateCount(id) {
       var element = document.getElementById(id);
       var count = parseInt(element.innerHTML) || 0;
       count += 1;
       element.innerHTML = count;
-      localStorage.setItem(id, count);
+      var message = {
+        id: id,
+        count: count
+      };
+      socket.send(JSON.stringify(message));
     }
-
-    function loadCounts() {
-      var lightCount = localStorage.getItem('LightMode');
-      var darkCount = localStorage.getItem('DarkMode');
-      if (lightCount) {
-        document.getElementById('LightMode').innerHTML = lightCount;
-      }
-      if (darkCount) {
-        document.getElementById('DarkMode').innerHTML = darkCount;
-      }
-    }
-
-    loadCounts();
   </script>
 </body>
 </html>
